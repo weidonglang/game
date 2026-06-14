@@ -1,5 +1,5 @@
 $repo = "E:\javacode\game-automation-repo"
-$logDir = Join-Path $repo "automation-logs"
+$logDir = "E:\javacode\game-automation-logs"
 $logFile = Join-Path $logDir ("auto-git-push-" + (Get-Date -Format "yyyyMMdd-HHmmss") + ".log")
 
 New-Item -ItemType Directory -Force -Path $logDir | Out-Null
@@ -7,6 +7,9 @@ New-Item -ItemType Directory -Force -Path $logDir | Out-Null
 Start-Transcript -Path $logFile -Append
 
 try {
+    Write-Host "Repo: $repo"
+    Write-Host "Log: $logFile"
+
     Set-Location $repo
 
     git status
