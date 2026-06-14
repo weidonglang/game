@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morse Radio Operator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="panel mission-panel">
+      <h1>Morse Radio Operator</h1>
+      <p class="subtitle">Tune the radio, listen to the signal, and decode the hidden message.</p>
+      <div class="status-grid">
+        <div>
+          <span class="label">Mission</span>
+          <strong id="missionLabel">1 / 10</strong>
+        </div>
+        <div>
+          <span class="label">Frequency</span>
+          <strong id="frequencyLabel">7100 kHz</strong>
+        </div>
+        <div>
+          <span class="label">Timer</span>
+          <strong id="timerLabel">0.0s</strong>
+        </div>
+        <div>
+          <span class="label">Score</span>
+          <strong id="scoreLabel">0</strong>
+        </div>
+      </div>
+      <label class="dial">
+        <span>Tuning Dial</span>
+        <input id="tuningDial" type="range" min="6800" max="7400" step="5" value="7100">
+      </label>
+      <p id="signalHint" class="signal-hint">Tune close to the mission frequency for a cleaner signal.</p>
+      <canvas id="waveform" width="720" height="180" aria-label="Radio waveform display"></canvas>
+      <div class="actions">
+        <button id="playButton" type="button">Play Signal</button>
+        <button id="clearButton" type="button">Clear Input</button>
+        <button id="skipButton" type="button">Restart Mission</button>
+      </div>
+    </section>
+
+    <section class="panel input-panel">
+      <h2>Transmit Your Decode</h2>
+      <p>Controls: <kbd>.</kbd> dot, <kbd>-</kbd> dash, <kbd>Space</kbd> letter gap, <kbd>/</kbd> word gap, <kbd>Enter</kbd> submit.</p>
+      <div class="entry-buttons">
+        <button data-input=".">Dot</button>
+        <button data-input="-">Dash</button>
+        <button data-input=" ">Letter Gap</button>
+        <button data-input=" / ">Word Gap</button>
+        <button id="submitButton" type="button">Submit</button>
+      </div>
+      <div class="readout">
+        <div>
+          <span class="label">Morse Input</span>
+          <pre id="morseInput">...</pre>
+        </div>
+        <div>
+          <span class="label">Decoded Text</span>
+          <pre id="decodedText">S</pre>
+        </div>
+      </div>
+      <div id="feedback" class="feedback">Waiting for transmission.</div>
+      <ol id="missionLog" class="mission-log"></ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

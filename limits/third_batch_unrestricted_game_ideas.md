@@ -813,3 +813,6 @@ Flutter / Dart + C++ 模拟核心 + SQLite
 ```text
 请用 Unity C# 实现一个 2D 时间回放平台跳跃游戏 MVP：玩家可移动和跳跃，按 R 开始下一轮，上一轮输入会生成幽灵角色自动重放，幽灵能踩按钮，按钮控制门，玩家到达出口后通关。
 ```
+Implemented: Morse Radio Operator - Status: implemented
+Project: E:\javacode\game-automation-repo\morse-radio-operator
+Implemented on: 2026-06-14

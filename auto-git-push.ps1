@@ -15,22 +15,22 @@ try {
     git status
     if ($LASTEXITCODE -ne 0) { throw "git status failed" }
 
-    git pull --rebase origin main
-    if ($LASTEXITCODE -ne 0) { throw "git pull --rebase failed" }
-
     $changes = git status --porcelain
 
-    if (-not $changes) {
-        Write-Host "No changes to commit."
-        exit 0
+    if ($changes) {
+        git add -- .
+        if ($LASTEXITCODE -ne 0) { throw "git add failed" }
+
+        $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
+        git commit -m "Automated game update $timestamp"
+        if ($LASTEXITCODE -ne 0) { throw "git commit failed" }
+    }
+    else {
+        Write-Host "No local changes to commit before pull."
     }
 
-    git add -- .
-    if ($LASTEXITCODE -ne 0) { throw "git add failed" }
-
-    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
-    git commit -m "Automated game update $timestamp"
-    if ($LASTEXITCODE -ne 0) { throw "git commit failed" }
+    git pull --rebase origin main
+    if ($LASTEXITCODE -ne 0) { throw "git pull --rebase failed" }
 
     git push
     if ($LASTEXITCODE -ne 0) { throw "git push failed" }
