@@ -1054,3 +1054,12 @@ Status: implemented
 Selected game: ÔÂÃæ×ÅÂ½Æ÷
 Project: E:\javacode\moon-lander-game
 Implemented on: 2026-06-14
+
+---
+
+Codex implementation note - 2026-06-16
+Game: Dice Duel King (section 8)
+Status: implemented
+Implemented in: dice-duel-king/
+Tracking issue: https://github.com/weidonglang/game/issues/1
+Summary: Added C terminal dice duel, CSV round logging, and base R strategy simulation.
