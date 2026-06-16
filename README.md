@@ -12,6 +12,7 @@ Each game is kept in its own directory with build or run instructions and a mini
 |-- maze-runner-game/           # Python maze game with R analysis
 |-- morse-radio-operator/       # HTML/CSS/JavaScript Morse radio game
 |-- dice-duel-king/             # C dice duel game with R simulation
+|-- pixel-cell-war/             # Native Windows visual cell simulation EXE
 |-- auto-git-push.ps1           # Windows helper script
 |-- .gitignore
 `-- README.md
@@ -25,6 +26,7 @@ Each game is kept in its own directory with build or run instructions and a mini
 | Maze Runner Mini Game | `maze-runner-game/` | Python 3, Tkinter, R analysis | Run `main.py` |
 | Morse Radio Operator | `morse-radio-operator/` | HTML, CSS, JavaScript, Web Audio API | Open `index.html` |
 | Dice Duel King | `dice-duel-king/` | C terminal UI, R simulation | Build and run `dice_duel.exe` |
+| Pixel Cell War | `pixel-cell-war/` | C, Win32 API, GDI, R analysis | Double-click `pixel_cell_war.exe` |
 
 ## Run Games
 
@@ -84,6 +86,43 @@ Optional R simulation:
 ```powershell
 cd E:\javacode\game-automation-repo
 Rscript .\dice-duel-king\analysis\simulate.R
+```
+
+### Pixel Cell War
+
+Double-click this file:
+
+```text
+E:\javacode\game-automation-repo\pixel-cell-war\pixel_cell_war.exe
+```
+
+Or run it from PowerShell:
+
+```powershell
+cd E:\javacode\game-automation-repo\pixel-cell-war
+.\pixel_cell_war.exe
+```
+
+Build from source:
+
+```powershell
+cd E:\javacode\game-automation-repo\pixel-cell-war
+.\build.bat
+```
+
+Self-test:
+
+```powershell
+cd E:\javacode\game-automation-repo\pixel-cell-war
+$p = Start-Process -FilePath '.\pixel_cell_war.exe' -ArgumentList '--self-test' -Wait -PassThru
+$p.ExitCode
+```
+
+Optional R analysis:
+
+```powershell
+cd E:\javacode\game-automation-repo
+Rscript .\pixel-cell-war\analysis\plot_counts.R
 ```
 
 ## Automation Workflow

@@ -1063,3 +1063,12 @@ Status: implemented
 Implemented in: dice-duel-king/
 Tracking issue: https://github.com/weidonglang/game/issues/1
 Summary: Added C terminal dice duel, CSV round logging, and base R strategy simulation.
+
+---
+
+Codex implementation note - 2026-06-16
+Game: Pixel Cell War (section 1)
+Status: implemented
+Implemented in: pixel-cell-war/
+Tracking issue: https://github.com/weidonglang/game/issues/3
+Summary: Added a native Windows Win32/GDI visual game, directly clickable EXE, CSV logging, and base R count plotting.
