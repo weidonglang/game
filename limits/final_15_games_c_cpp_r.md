@@ -1072,3 +1072,12 @@ Status: implemented
 Implemented in: pixel-cell-war/
 Tracking issue: https://github.com/weidonglang/game/issues/3
 Summary: Added a native Windows Win32/GDI visual game, directly clickable EXE, CSV logging, and base R count plotting.
+
+---
+
+Codex implementation note - 2026-06-16
+Game: Reactor Cooling Crisis (section 15)
+Status: implemented
+Implemented in: reactor-cooling-crisis/
+Tracking issue: https://github.com/weidonglang/game/issues/5
+Summary: Added a native Windows Win32/GDI reactor control room game, directly clickable EXE, CSV telemetry, and base R reactor curve plotting.

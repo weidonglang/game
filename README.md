@@ -13,6 +13,7 @@ Each game is kept in its own directory with build or run instructions and a mini
 |-- morse-radio-operator/       # HTML/CSS/JavaScript Morse radio game
 |-- dice-duel-king/             # C dice duel game with R simulation
 |-- pixel-cell-war/             # Native Windows visual cell simulation EXE
+|-- reactor-cooling-crisis/     # Native Windows reactor control room EXE
 |-- auto-git-push.ps1           # Windows helper script
 |-- .gitignore
 `-- README.md
@@ -27,6 +28,7 @@ Each game is kept in its own directory with build or run instructions and a mini
 | Morse Radio Operator | `morse-radio-operator/` | HTML, CSS, JavaScript, Web Audio API | Open `index.html` |
 | Dice Duel King | `dice-duel-king/` | C terminal UI, R simulation | Build and run `dice_duel.exe` |
 | Pixel Cell War | `pixel-cell-war/` | C, Win32 API, GDI, R analysis | Double-click `pixel_cell_war.exe` |
+| Reactor Cooling Crisis | `reactor-cooling-crisis/` | C++, Win32 API, GDI, R analysis | Double-click `reactor_cooling_crisis.exe` |
 
 ## Run Games
 
@@ -123,6 +125,43 @@ Optional R analysis:
 ```powershell
 cd E:\javacode\game-automation-repo
 Rscript .\pixel-cell-war\analysis\plot_counts.R
+```
+
+### Reactor Cooling Crisis
+
+Double-click this file:
+
+```text
+E:\javacode\game-automation-repo\reactor-cooling-crisis\reactor_cooling_crisis.exe
+```
+
+Or run it from PowerShell:
+
+```powershell
+cd E:\javacode\game-automation-repo\reactor-cooling-crisis
+.\reactor_cooling_crisis.exe
+```
+
+Build from source:
+
+```powershell
+cd E:\javacode\game-automation-repo\reactor-cooling-crisis
+.\build.bat
+```
+
+Self-test:
+
+```powershell
+cd E:\javacode\game-automation-repo\reactor-cooling-crisis
+$p = Start-Process -FilePath '.\reactor_cooling_crisis.exe' -ArgumentList '--self-test' -Wait -PassThru
+$p.ExitCode
+```
+
+Optional R analysis:
+
+```powershell
+cd E:\javacode\game-automation-repo
+Rscript .\reactor-cooling-crisis\analysis\plot_reactor.R
 ```
 
 ## Automation Workflow
