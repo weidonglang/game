@@ -1054,3 +1054,12 @@ Status: implemented
 Selected game: ÔÂÃæ×ÅÂ½Æ÷
 Project: E:\javacode\moon-lander-game
 Implemented on: 2026-06-14
+
+---
+
+Codex implementation note - 2026-06-16
+Game: Pixel Cell War (section 1)
+Status: implemented
+Implemented in: pixel-cell-war/
+Tracking issue: https://github.com/weidonglang/game/issues/3
+Summary: Added a native Windows Win32/GDI visual game, directly clickable EXE, CSV logging, and base R count plotting.
