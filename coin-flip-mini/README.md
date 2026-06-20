@@ -29,6 +29,36 @@ python coin-flip-mini/coin_flip.py
 python -m unittest discover coin-flip-mini
 ```
 
+## Example Input and Output
+
+```
+========================================
+       Coin Flip Mini - Guess the Coin!
+========================================
+Guess heads (h) or tails (t). Enter 'q' to quit.
+
+Your guess (heads/tails/h/t): heads
+The coin shows: tails
+You lose! Better luck next time.
+----------------------------------------
+
+Your guess (heads/tails/h/t): t
+The coin shows: tails
+You win! 🎉
+----------------------------------------
+
+Your guess (heads/tails/h/t): q
+Thanks for playing!
+```
+
 ## How to Exit
 
-Type `q` or `quit` at any prompt, or press Ctrl+C / Ctrl+D.
+- Type `q` or `quit` at the prompt, then press Enter.
+- Press `Ctrl+C` (KeyboardInterrupt) to exit immediately.
+- Press `Ctrl+D` (EOF) on an empty line to exit gracefully.
+
+## Notes
+
+- No external dependencies required.
+- Python 3.6+ recommended for f-string support.
+- All game logic is contained in a single module for simplicity.
