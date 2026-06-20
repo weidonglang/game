@@ -18,7 +18,7 @@ function summary = summarizeCoinFlip(all_rounds, players)
 %
 %   Algorithm:
 %       1. Initialize scores/wins/losses arrays for each player
-%       2. For each round, for each match, find player indexes and update
+%       2. For each round, for each match, find player index and update
 %       3. Determine winner(s) by max score
 %       4. Build summary struct
 %
@@ -53,22 +53,13 @@ for r = 1:n_rounds
     round_data = all_rounds{r};
     for m = 1:length(round_data)
         match = round_data(m);
-        p1_idx = find(strcmp(players, match.player1), 1);
-        p2_idx = find(strcmp(players, match.player2), 1);
-        if ~isempty(p1_idx)
-            scores(p1_idx) = scores(p1_idx) + match.points1;
-            if strcmp(match.winner, match.player1)
-                wins(p1_idx) = wins(p1_idx) + 1;
+        p_idx = find(strcmp(players, match.player), 1);
+        if ~isempty(p_idx)
+            scores(p_idx) = scores(p_idx) + match.points;
+            if match.points == 1
+                wins(p_idx) = wins(p_idx) + 1;
             else
-                losses(p1_idx) = losses(p1_idx) + 1;
-            end
-        end
-        if ~isempty(p2_idx)
-            scores(p2_idx) = scores(p2_idx) + match.points2;
-            if strcmp(match.winner, match.player2)
-                wins(p2_idx) = wins(p2_idx) + 1;
-            else
-                losses(p2_idx) = losses(p2_idx) + 1;
+                losses(p_idx) = losses(p_idx) + 1;
             end
         end
     end
@@ -82,10 +73,18 @@ else
     winner_str = 'Tie';
 end
 
+% Build formatted table string from cell array
+tbl_cell = arcadeScoreTable(players, scores);
+tbl_str = '';
+for i = 1:size(tbl_cell, 1)
+    row_str = sprintf('%-4s %-20s %s\n', tbl_cell{i,1}, tbl_cell{i,2}, tbl_cell{i,3});
+    tbl_str = [tbl_str, row_str];
+end
+
 summary.scores = scores;
 summary.rounds = n_rounds;
 summary.winner = winner_str;
-summary.table = arcadeScoreTable(players, scores);
+summary.table = tbl_str;
 summary.wins = wins;
 summary.losses = losses;
 end
