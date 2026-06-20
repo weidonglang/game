@@ -22,7 +22,7 @@ def normalize_choice(choice: str) -> str:
 
 def flip_coin() -> str:
     """Randomly return "heads" or "tails"."""
-    return "heads"
+    return random.choice(["heads", "tails"])
 
 
 def decide_result(player_choice: str, coin_result: str) -> str:

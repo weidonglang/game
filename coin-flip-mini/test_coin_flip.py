@@ -56,7 +56,11 @@ class TestDecideResult(unittest.TestCase):
 class TestFlipCoin(unittest.TestCase):
     """Test coin flip randomness."""
 
-    pass
+    def test_returns_heads_or_tails(self):
+        """flip_coin() should only return "heads" or "tails"."""
+        for _ in range(100):
+            result = flip_coin()
+            self.assertIn(result, ("heads", "tails"))
 
 
 if __name__ == "__main__":
