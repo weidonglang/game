@@ -7,9 +7,17 @@ import random
 def normalize_choice(choice: str) -> str:
     """Normalize and validate user input.
 
+    Supports "heads"/"h" and "tails"/"t", case-insensitive,
+    with leading/trailing whitespace stripped.
     Returns "heads", "tails", or "invalid".
     """
-    return "invalid"
+    mapping = {
+        "heads": "heads",
+        "h": "heads",
+        "tails": "tails",
+        "t": "tails",
+    }
+    return mapping.get(choice.strip().lower(), "invalid")
 
 
 def flip_coin() -> str:
