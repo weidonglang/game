@@ -49,7 +49,7 @@ if nargin < 3
 end
 
 num_players = length(players);
-num_matches = floor(num_players / 2);
+num_matches = nchoosek(num_players, 2);
 
 round_matches = struct('player1', cell(1, num_matches), ...
     'player2', cell(1, num_matches), ...
@@ -59,10 +59,12 @@ round_matches = struct('player1', cell(1, num_matches), ...
     'points1', cell(1, num_matches), ...
     'points2', cell(1, num_matches));
 
-for i = 1:num_matches
-    p1 = players{2*i - 1};
-    p2 = players{2*i};
-    match_result = simulateDiceDuelMatch(p1, p2, sides, num_dice);
-    round_matches(i) = match_result;
+idx = 1;
+for i = 1:num_players
+    for j = i+1:num_players
+        match_result = simulateDiceDuelMatch(players{i}, players{j}, sides, num_dice);
+        round_matches(idx) = match_result;
+        idx = idx + 1;
+    end
 end
 end

@@ -60,16 +60,22 @@ if ~ischar(player1) || ~ischar(player2)
         'SIMULATEDICEDUELMATCH requires string player names');
 end
 
-% Each player rolls
-roll1 = arcadeDiceRoll(sides, num_dice);
-roll2 = arcadeDiceRoll(sides, num_dice);
+% Each player rolls individual dice (store as array)
+roll1 = zeros(1, num_dice);
+roll2 = zeros(1, num_dice);
+for d = 1:num_dice
+    roll1(d) = arcadeDiceRoll(sides);
+    roll2(d) = arcadeDiceRoll(sides);
+end
 
-% Determine winner
-if roll1 > roll2
+% Determine winner (compare sums)
+sum1 = sum(roll1);
+sum2 = sum(roll2);
+if sum1 > sum2
     winner = player1;
     points1 = 1;
     points2 = 0;
-elseif roll2 > roll1
+elseif sum2 > sum1
     winner = player2;
     points1 = 0;
     points2 = 1;

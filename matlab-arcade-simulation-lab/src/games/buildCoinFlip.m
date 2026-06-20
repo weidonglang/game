@@ -37,9 +37,9 @@ if nargin < 1 || isempty(num_players)
     num_players = 4;
 end
 
-if ~isnumeric(num_players) || ~isscalar(num_players) || num_players < 1
+if ~isnumeric(num_players) || ~isscalar(num_players) || num_players < 2
     error('Arcade:InvalidArgument', ...
-        'BUILDCOINFLIP requires num_players >= 1');
+        'BUILDCOINFLIP requires num_players >= 2');
 end
 
 num_players = round(num_players);
