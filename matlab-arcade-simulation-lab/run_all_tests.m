@@ -5,6 +5,9 @@ function results = run_all_tests()
 %
 %   See also run_all_demos
 
+% Add core utilities to MATLAB path
+addpath(fullfile('src', 'core'));
+
 fprintf('\n========================================\n');
 fprintf('  MATLAB Arcade Simulation Lab - Tests\n');
 fprintf('========================================\n\n');
