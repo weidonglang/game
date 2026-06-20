@@ -40,7 +40,17 @@ class TestNormalizeChoice(unittest.TestCase):
 class TestDecideResult(unittest.TestCase):
     """Test result decision logic."""
 
-    pass
+    def test_win(self):
+        """decide_result("heads", "heads") should return "win"."""
+        self.assertEqual(decide_result("heads", "heads"), "win")
+
+    def test_lose(self):
+        """decide_result("heads", "tails") should return "lose"."""
+        self.assertEqual(decide_result("heads", "tails"), "lose")
+
+    def test_invalid_choice(self):
+        """decide_result("invalid", "heads") should return "invalid"."""
+        self.assertEqual(decide_result("invalid", "heads"), "invalid")
 
 
 class TestFlipCoin(unittest.TestCase):

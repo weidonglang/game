@@ -30,7 +30,11 @@ def decide_result(player_choice: str, coin_result: str) -> str:
 
     Returns "win", "lose", or "invalid".
     """
-    return "invalid"
+    if player_choice == "invalid":
+        return "invalid"
+    if player_choice == coin_result:
+        return "win"
+    return "lose"
 
 
 def main() -> None:
