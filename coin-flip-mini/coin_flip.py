@@ -39,7 +39,38 @@ def decide_result(player_choice: str, coin_result: str) -> str:
 
 def main() -> None:
     """Run the Coin Flip Mini CLI game."""
-    pass
+    print("=" * 40)
+    print("       Coin Flip Mini - Guess the Coin!")
+    print("=" * 40)
+    print("Guess heads (h) or tails (t). Enter 'q' to quit.\n")
+
+    while True:
+        try:
+            user_input = input("Your guess (heads/tails/h/t): ").strip()
+        except EOFError:
+            print()
+            break
+
+        if user_input.lower() in ("q", "quit"):
+            print("Thanks for playing!")
+            break
+
+        player_choice = normalize_choice(user_input)
+        if player_choice == "invalid":
+            print("Invalid input. Please enter 'heads', 'tails', 'h', or 't'.")
+            continue
+
+        coin_result = flip_coin()
+        result = decide_result(player_choice, coin_result)
+
+        print(f"The coin shows: {coin_result}")
+        if result == "win":
+            print("You win! 🎉")
+        else:
+            print("You lose! Better luck next time.")
+
+        print("-" * 40)
+        print()
 
 
 if __name__ == "__main__":
