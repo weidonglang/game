@@ -15,6 +15,10 @@ end
 
 n = length(items);
 
+if n == 0
+    error('Arcade:InvalidArgument', 'SHUFFLE requires a non-empty cell array');
+end
+
 % Generate random permutation
 indices = randperm(n);
 

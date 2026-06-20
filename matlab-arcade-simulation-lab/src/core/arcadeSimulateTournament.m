@@ -67,7 +67,7 @@ end
 
 % Build results struct
 results.matrix = score_matrix;
-results.names = players;
+results.names = players(:);
 results.rounds = num_rounds;
 results.scores = sum(score_matrix, 2)';
 results.table = arcadeScoreTable(players, results.scores);
