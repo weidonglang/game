@@ -1,0 +1,514 @@
+ 
+要开始，请键入 doc。
+有关产品信息，请访问 www.mathworks.com。
+ 
+
+========================================
+  MATLAB Arcade Simulation Lab - Tests
+========================================
+
+ 正在运行 testCoreUtilities
+正在运行 testCoreUtilities
+  正在设置 testCoreUtilities
+  设置 testCoreUtilities 在 0.074004 秒内完成
+   正在运行 testCoreUtilities/testRandomChoiceValid
+.   testCoreUtilities/testRandomChoiceValid 在 0.0054408 秒内完成
+   正在运行 testCoreUtilities/testRandomChoiceSingleItem
+.   testCoreUtilities/testRandomChoiceSingleItem 在 0.24699 秒内完成
+   正在运行 testCoreUtilities/testRandomChoiceDistribution
+.   testCoreUtilities/testRandomChoiceDistribution 在 0.010191 秒内完成
+   正在运行 testCoreUtilities/testRandomChoiceEmptyError
+.   testCoreUtilities/testRandomChoiceEmptyError 在 0.11625 秒内完成
+   正在运行 testCoreUtilities/testRandomChoiceNumericArray
+.   testCoreUtilities/testRandomChoiceNumericArray 在 0.0058919 秒内完成
+   正在运行 testCoreUtilities/testNormalizeNameHeads
+.   testCoreUtilities/testNormalizeNameHeads 在 0.013434 秒内完成
+   正在运行 testCoreUtilities/testNormalizeNameTails
+.   testCoreUtilities/testNormalizeNameTails 在 0.0066793 秒内完成
+   正在运行 testCoreUtilities/testNormalizeNameH
+.   testCoreUtilities/testNormalizeNameH 在 0.005529 秒内完成
+   正在运行 testCoreUtilities/testNormalizeNameT
+.   testCoreUtilities/testNormalizeNameT 在 0.01655 秒内完成
+   正在运行 testCoreUtilities/testNormalizeNameCaseInsensitive
+.   testCoreUtilities/testNormalizeNameCaseInsensitive 在 0.0057161 秒内完成
+   正在运行 testCoreUtilities/testNormalizeNameTrim
+ .   testCoreUtilities/testNormalizeNameTrim 在 0.001981 秒内完成
+   正在运行 testCoreUtilities/testNormalizeNameInvalid
+.   testCoreUtilities/testNormalizeNameInvalid 在 0.0078672 秒内完成
+   正在运行 testCoreUtilities/testNormalizeNameEdgeCases
+.   testCoreUtilities/testNormalizeNameEdgeCases 在 0.0033048 秒内完成
+   正在运行 testCoreUtilities/testClampWithinBounds
+.   testCoreUtilities/testClampWithinBounds 在 0.012038 秒内完成
+   正在运行 testCoreUtilities/testClampBelowMin
+.   testCoreUtilities/testClampBelowMin 在 0.0022891 秒内完成
+   正在运行 testCoreUtilities/testClampAboveMax
+.   testCoreUtilities/testClampAboveMax 在 0.0031733 秒内完成
+   正在运行 testCoreUtilities/testClampExactBounds
+.   testCoreUtilities/testClampExactBounds 在 0.0074363 秒内完成
+   正在运行 testCoreUtilities/testClampNegativeBounds
+.   testCoreUtilities/testClampNegativeBounds 在 0.0017512 秒内完成
+   正在运行 testCoreUtilities/testValidateProbabilityValid
+.   testCoreUtilities/testValidateProbabilityValid 在 0.0033358 秒内完成
+   正在运行 testCoreUtilities/testValidateProbabilityInvalid
+.   testCoreUtilities/testValidateProbabilityInvalid 在 0.011891 秒内完成
+   正在运行 testCoreUtilities/testSeedReproducibility
+ .   testCoreUtilities/testSeedReproducibility 在 0.017516 秒内完成
+   正在运行 testCoreUtilities/testSeedDifferentResults
+.   testCoreUtilities/testSeedDifferentResults 在 0.030531 秒内完成
+   正在运行 testCoreUtilities/testSafeMeanBasic
+.   testCoreUtilities/testSafeMeanBasic 在 0.010906 秒内完成
+   正在运行 testCoreUtilities/testSafeMeanWithNaN
+.   testCoreUtilities/testSafeMeanWithNaN 在 0.0021056 秒内完成
+   正在运行 testCoreUtilities/testSafeMeanEmpty
+.   testCoreUtilities/testSafeMeanEmpty 在 0.0010097 秒内完成
+   正在运行 testCoreUtilities/testSafeMeanAllNaN
+.   testCoreUtilities/testSafeMeanAllNaN 在 0.0006707 秒内完成
+   正在运行 testCoreUtilities/testSafeMeanSingleValue
+.   testCoreUtilities/testSafeMeanSingleValue 在 0.0022159 秒内完成
+   正在运行 testCoreUtilities/testSafeStdBasic
+.   testCoreUtilities/testSafeStdBasic 在 0.0068323 秒内完成
+   正在运行 testCoreUtilities/testSafeStdWithNaN
+.   testCoreUtilities/testSafeStdWithNaN 在 0.0010548 秒内完成
+   正在运行 testCoreUtilities/testSafeStdEmpty
+.   testCoreUtilities/testSafeStdEmpty 在 0.0006202 秒内完成
+   正在运行 testCoreUtilities/testSafeStdConstant
+ .   testCoreUtilities/testSafeStdConstant 在 0.0031186 秒内完成
+   正在运行 testCoreUtilities/testScoreTableBasic
+.   testCoreUtilities/testScoreTableBasic 在 0.014196 秒内完成
+   正在运行 testCoreUtilities/testScoreTableTies
+.   testCoreUtilities/testScoreTableTies 在 0.0032143 秒内完成
+   正在运行 testCoreUtilities/testScoreTableEmptyError
+.   testCoreUtilities/testScoreTableEmptyError 在 0.011725 秒内完成
+   正在运行 testCoreUtilities/testScoreTableMismatchError
+.   testCoreUtilities/testScoreTableMismatchError 在 0.010022 秒内完成
+   正在运行 testCoreUtilities/testTextBarFull
+.   testCoreUtilities/testTextBarFull 在 0.0033203 秒内完成
+   正在运行 testCoreUtilities/testTextBarEmpty
+.   testCoreUtilities/testTextBarEmpty 在 0.0017069 秒内完成
+   正在运行 testCoreUtilities/testTextBarHalf
+.   testCoreUtilities/testTextBarHalf 在 0.0012297 秒内完成
+   正在运行 testCoreUtilities/testTextBarClamping
+.   testCoreUtilities/testTextBarClamping 在 0.0026244 秒内完成
+   正在运行 testCoreUtilities/testConfigDefault
+.   testCoreUtilities/testConfigDefault 在 0.0018213 秒内完成
+   正在运行 testCoreUtilities/testConfigCustom
+ .   testCoreUtilities/testConfigCustom 在 0.0052768 秒内完成
+   正在运行 testCoreUtilities/testAssertValid
+.   testCoreUtilities/testAssertValid 在 0.0015835 秒内完成
+   正在运行 testCoreUtilities/testAssertInvalid
+.   testCoreUtilities/testAssertInvalid 在 0.0085527 秒内完成
+   正在运行 testCoreUtilities/testWeightedChoiceValid
+.   testCoreUtilities/testWeightedChoiceValid 在 0.0031641 秒内完成
+   正在运行 testCoreUtilities/testWeightedChoiceSizeMismatch
+.   testCoreUtilities/testWeightedChoiceSizeMismatch 在 0.021775 秒内完成
+   正在运行 testCoreUtilities/testDiceRollSingle
+.   testCoreUtilities/testDiceRollSingle 在 0.0016678 秒内完成
+   正在运行 testCoreUtilities/testDiceRollMultiple
+.   testCoreUtilities/testDiceRollMultiple 在 0.0007695 秒内完成
+   正在运行 testCoreUtilities/testDiceRollWithModifier
+.   testCoreUtilities/testDiceRollWithModifier 在 0.0048213 秒内完成
+   正在运行 testCoreUtilities/testDiceRollInvalidSides
+.   testCoreUtilities/testDiceRollInvalidSides 在 0.0029388 秒内完成
+   正在运行 testCoreUtilities/testDiceRollD20
+.   testCoreUtilities/testDiceRollD20 在 0.0035914 秒内完成
+   正在运行 testCoreUtilities/testDiceRollD100
+
+.   testCoreUtilities/testDiceRollD100 在 0.0006296 秒内完成
+   正在运行 testCoreUtilities/testShuffleSameElements
+.   testCoreUtilities/testShuffleSameElements 在 0.016173 秒内完成
+   正在运行 testCoreUtilities/testShuffleSameLength
+.   testCoreUtilities/testShuffleSameLength 在 0.0017278 秒内完成
+   正在运行 testCoreUtilities/testShuffleNotAlwaysSame
+.   testCoreUtilities/testShuffleNotAlwaysSame 在 0.0096297 秒内完成
+   正在运行 testCoreUtilities/testShuffleEmptyError
+.   testCoreUtilities/testShuffleEmptyError 在 0.0037211 秒内完成
+   正在运行 testCoreUtilities/testShuffleSingleElement
+.   testCoreUtilities/testShuffleSingleElement 在 0.014077 秒内完成
+   正在运行 testCoreUtilities/testCoinFlipValidResults
+.   testCoreUtilities/testCoinFlipValidResults 在 0.0029077 秒内完成
+   正在运行 testCoreUtilities/testCoinFlipDistribution
+.   testCoreUtilities/testCoinFlipDistribution 在 0.0016249 秒内完成
+   正在运行 testCoreUtilities/testTournamentBasic
+.   testCoreUtilities/testTournamentBasic 在 0.016209 秒内完成
+   正在运行 testCoreUtilities/testTournamentAllCooperate
+.   testCoreUtilities/testTournamentAllCooperate 在 0.0041402 秒内完成
+   正在运行 testCoreUtilities/testTournamentDefaultStrategies
+ .   testCoreUtilities/testTournamentDefaultStrategies 在 0.0022968 秒内完成
+   正在运行 testCoreUtilities/testAnalyzeResultsBasic
+.   testCoreUtilities/testAnalyzeResultsBasic 在 0.01721 秒内完成
+   正在运行 testCoreUtilities/testAnalyzeResultsWithNaN
+.   testCoreUtilities/testAnalyzeResultsWithNaN 在 0.0028799 秒内完成
+   正在运行 testCoreUtilities/testAnalyzeResultsSingleValue
+.   testCoreUtilities/testAnalyzeResultsSingleValue 在 0.0036931 秒内完成
+   正在运行 testCoreUtilities/testAnalyzeResultsEmpty
+.   testCoreUtilities/testAnalyzeResultsEmpty 在 0.0017492 秒内完成
+   正在运行 testCoreUtilities/testAnalyzeResultsLabel
+.   testCoreUtilities/testAnalyzeResultsLabel 在 0.0037459 秒内完成
+   正在运行 testCoreUtilities/testFormatScoreSmall
+.   testCoreUtilities/testFormatScoreSmall 在 0.002192 秒内完成
+   正在运行 testCoreUtilities/testFormatScoreThousand
+.   testCoreUtilities/testFormatScoreThousand 在 0.0015898 秒内完成
+   正在运行 testCoreUtilities/testFormatScoreMillion
+.   testCoreUtilities/testFormatScoreMillion 在 0.0014808 秒内完成
+   正在运行 testCoreUtilities/testFormatScoreNegative
+.   testCoreUtilities/testFormatScoreNegative 在 0.0013433 秒内完成
+   正在运行 testCoreUtilities/testFormatPercentBasic
+ .   testCoreUtilities/testFormatPercentBasic 在 0.002147 秒内完成
+   正在运行 testCoreUtilities/testFormatPercentWhole
+.   testCoreUtilities/testFormatPercentWhole 在 0.0012336 秒内完成
+   正在运行 testCoreUtilities/testFormatPercentZero
+.   testCoreUtilities/testFormatPercentZero 在 0.0011923 秒内完成
+  正在拆解 testCoreUtilities
+  拆解 testCoreUtilities 在 0.0002791 秒内完成
+
+已完成 testCoreUtilities
+__________
+
+ testCoreUtilities 在 0.8562 秒内完成
+__________
+
+ 正在运行 testGamesPackA
+正在运行 testGamesPackA
+  正在设置 testGamesPackA
+  设置 testGamesPackA 在 0.0002317 秒内完成
+   正在运行 testGamesPackA/testBuildCoinFlipDefault
+.   testGamesPackA/testBuildCoinFlipDefault 在 0.0037547 秒内完成
+   正在运行 testGamesPackA/testBuildCoinFlipCustom
+.   testGamesPackA/testBuildCoinFlipCustom 在 0.0027888 秒内完成
+   正在运行 testGamesPackA/testBuildCoinFlipError
+
+================================================================================
+testGamesPackA/testBuildCoinFlipError 中验证失败。
+    --------
+    框架诊断:
+    --------
+    verifyError 失败。
+    --> 函数未引发任何异常。
+        
+        预期的异常:
+            'Arcade:InvalidArgument'
+    
+    计算的函数:
+      包含以下值的 function_handle:
+    
+        @()buildCoinFlip(1)
+    --------
+    堆栈信息:
+    --------
+    位置: E:\javacode\game-automation-repo\matlab-arcade-simulation-lab\tests\testGamesPackA.m (testBuildCoinFlipError)，位置: 31
+================================================================================
+.   testGamesPackA/testBuildCoinFlipError 在 0.70519 秒内完成
+   正在运行 testGamesPackA/testScoreCoinFlipGuessHeads
+.   testGamesPackA/testScoreCoinFlipGuessHeads 在 0.0054174 秒内完成
+   正在运行 testGamesPackA/testScoreCoinFlipGuessTails
+.   testGamesPackA/testScoreCoinFlipGuessTails 在 0.0037852 秒内完成
+   正在运行 testGamesPackA/testScoreCoinFlipGuessWrong
+.   testGamesPackA/testScoreCoinFlipGuessWrong 在 0.0018155 秒内完成
+   正在运行 testGamesPackA/testScoreCoinFlipGuessInvalid
+.   testGamesPackA/testScoreCoinFlipGuessInvalid 在 0.0037197 秒内完成
+   正在运行 testGamesPackA/testSimulateCoinFlipRoundStructure
+.   testGamesPackA/testSimulateCoinFlipRoundStructure 在 0.0097197 秒内完成
+   正在运行 testGamesPackA/testSimulateCoinFlipRoundPlayerNames
+.   testGamesPackA/testSimulateCoinFlipRoundPlayerNames 在 0.0032804 秒内完成
+   正在运行 testGamesPackA/testSummarizeCoinFlipBasic
+
+================================================================================
+testGamesPackA/testSummarizeCoinFlipBasic 中出现错误并且未运行完毕。
+    --------
+    错误 ID:
+    --------
+    'MATLAB:nonExistentField'
+    -----------
+    错误详细信息:
+    -----------
+    无法识别的字段名称 "player1"。
+    
+    出错 summarizeCoinFlip (第 56 行)
+            p1_idx = find(strcmp(players, match.player1), 1);
+    
+    出错 testGamesPackA>testSummarizeCoinFlipBasic (第 88 行)
+    summary = summarizeCoinFlip(all_rounds, players);
+================================================================================
+.   testGamesPackA/testSummarizeCoinFlipBasic 在 0.0032958 秒内完成
+   正在运行 testGamesPackA/testSummarizeCoinFlipDeterministic
+ 
+================================================================================
+testGamesPackA/testSummarizeCoinFlipDeterministic 中出现错误并且未运行完毕。
+    --------
+    错误 ID:
+    --------
+    'MATLAB:nonExistentField'
+    -----------
+    错误详细信息:
+    -----------
+    无法识别的字段名称 "player1"。
+    
+    出错 summarizeCoinFlip (第 56 行)
+            p1_idx = find(strcmp(players, match.player1), 1);
+    
+    出错 testGamesPackA>testSummarizeCoinFlipDeterministic (第 102 行)
+    summary = summarizeCoinFlip(all_rounds, players);
+================================================================================
+.   testGamesPackA/testSummarizeCoinFlipDeterministic 在 0.0017195 秒内完成
+   正在运行 testGamesPackA/testPlayCoinFlipDefault
+
+================================================================================
+testGamesPackA/testPlayCoinFlipDefault 中出现错误并且未运行完毕。
+    --------
+    错误 ID:
+    --------
+    'MATLAB:nonExistentField'
+    -----------
+    错误详细信息:
+    -----------
+    无法识别的字段名称 "player1"。
+    
+    出错 summarizeCoinFlip (第 56 行)
+            p1_idx = find(strcmp(players, match.player1), 1);
+    
+    出错 playCoinFlip (第 68 行)
+    summary = summarizeCoinFlip(all_rounds, players);
+    
+    出错 testGamesPackA>testPlayCoinFlipDefault (第 108 行)
+    summary = playCoinFlip();
+================================================================================
+.   testGamesPackA/testPlayCoinFlipDefault 在 0.0047264 秒内完成
+   正在运行 testGamesPackA/testPlayCoinFlipCustom
+
+================================================================================
+testGamesPackA/testPlayCoinFlipCustom 中出现错误并且未运行完毕。
+    --------
+    错误 ID:
+    --------
+    'MATLAB:nonExistentField'
+    -----------
+    错误详细信息:
+    -----------
+    无法识别的字段名称 "player1"。
+    
+    出错 summarizeCoinFlip (第 56 行)
+            p1_idx = find(strcmp(players, match.player1), 1);
+    
+    出错 playCoinFlip (第 68 行)
+    summary = summarizeCoinFlip(all_rounds, players);
+    
+    出错 testGamesPackA>testPlayCoinFlipCustom (第 114 行)
+    summary = playCoinFlip(3, 5);
+================================================================================
+.   testGamesPackA/testPlayCoinFlipCustom 在 0.0014475 秒内完成
+   正在运行 testGamesPackA/testBuildDiceDuelDefault
+.   testGamesPackA/testBuildDiceDuelDefault 在 0.0066452 秒内完成
+   正在运行 testGamesPackA/testBuildDiceDuelCustom
+.   testGamesPackA/testBuildDiceDuelCustom 在 0.0016293 秒内完成
+   正在运行 testGamesPackA/testBuildDiceDuelError
+.   testGamesPackA/testBuildDiceDuelError 在 0.00603 秒内完成
+   正在运行 testGamesPackA/testSimulateDiceDuelMatchBasic
+.   testGamesPackA/testSimulateDiceDuelMatchBasic 在 0.0067431 秒内完成
+   正在运行 testGamesPackA/testSimulateDiceDuelMatchMultipleDice
+
+================================================================================
+testGamesPackA/testSimulateDiceDuelMatchMultipleDice 中验证失败。
+    --------
+    框架诊断:
+    --------
+    verifyTrue 失败。
+    --> 值的计算结果必须为 "true"。
+    
+    实际值:
+      logical
+    
+       0
+    --------
+    堆栈信息:
+    --------
+    位置: E:\javacode\game-automation-repo\matlab-arcade-simulation-lab\tests\testGamesPackA.m (testSimulateDiceDuelMatchMultipleDice)，位置: 156
+================================================================================
+
+================================================================================
+testGamesPackA/testSimulateDiceDuelMatchMultipleDice 中验证失败。
+    --------
+    框架诊断:
+    --------
+    verifyTrue 失败。
+    --> 值的计算结果必须为 "true"。
+    
+    实际值:
+      logical
+    
+       0
+    --------
+    堆栈信息:
+    --------
+    位置: E:\javacode\game-automation-repo\matlab-arcade-simulation-lab\tests\testGamesPackA.m (testSimulateDiceDuelMatchMultipleDice)，位置: 157
+================================================================================
+.   testGamesPackA/testSimulateDiceDuelMatchMultipleDice 在 0.18581 秒内完成
+   正在运行 testGamesPackA/testSimulateDiceDuelMatchOrderedResult
+.   testGamesPackA/testSimulateDiceDuelMatchOrderedResult 在 0.0037015 秒内完成
+   正在运行 testGamesPackA/testResolveDiceDuelRoundStructure
+
+================================================================================
+testGamesPackA/testResolveDiceDuelRoundStructure 中验证失败。
+    --------
+    框架诊断:
+    --------
+    verifyEqual 失败。
+    --> 使用 "isequaln" 确定数值不相等。
+    --> 失败表:
+            Actual    Expected    Error      RelativeError   
+            ______    ________    _____    __________________
+                                                             
+              2          6         -4      -0.666666666666667
+    
+    实际值:
+         2
+    预期值:
+         6
+    --------
+    堆栈信息:
+    --------
+    位置: E:\javacode\game-automation-repo\matlab-arcade-simulation-lab\tests\testGamesPackA.m (testResolveDiceDuelRoundStructure)，位置: 181
+================================================================================
+.   testGamesPackA/testResolveDiceDuelRoundStructure 在 0.44826 秒内完成
+   正在运行 testGamesPackA/testResolveDiceDuelRoundTwoPlayers
+ .   testGamesPackA/testResolveDiceDuelRoundTwoPlayers 在 0.0067754 秒内完成
+   正在运行 testGamesPackA/testSummarizeDiceDuel
+.   testGamesPackA/testSummarizeDiceDuel 在 0.0059088 秒内完成
+   正在运行 testGamesPackA/testPlayDiceDuelDefault
+.   testGamesPackA/testPlayDiceDuelDefault 在 0.015609 秒内完成
+   正在运行 testGamesPackA/testPlayDiceDuelCustom
+.   testGamesPackA/testPlayDiceDuelCustom 在 0.0048053 秒内完成
+   正在运行 testGamesPackA/testBuildLuckyWheelDefault
+.   testGamesPackA/testBuildLuckyWheelDefault 在 0.0034712 秒内完成
+   正在运行 testGamesPackA/testBuildLuckyWheelCustom
+.   testGamesPackA/testBuildLuckyWheelCustom 在 0.0020784 秒内完成
+   正在运行 testGamesPackA/testBuildLuckyWheelError
+.   testGamesPackA/testBuildLuckyWheelError 在 0.0050918 秒内完成
+   正在运行 testGamesPackA/testSpinLuckyWheelDefault
+.   testGamesPackA/testSpinLuckyWheelDefault 在 0.0069063 秒内完成
+   正在运行 testGamesPackA/testSpinLuckyWheelCustom
+.   testGamesPackA/testSpinLuckyWheelCustom 在 0.0008432 秒内完成
+   正在运行 testGamesPackA/testSpinLuckyWheelPrizeValues
+.   testGamesPackA/testSpinLuckyWheelPrizeValues 在 0.0056507 秒内完成
+   正在运行 testGamesPackA/testScoreLuckyWheelSpinNormal
+ .   testGamesPackA/testScoreLuckyWheelSpinNormal 在 0.0023105 秒内完成
+   正在运行 testGamesPackA/testScoreLuckyWheelSpinBankrupt
+.   testGamesPackA/testScoreLuckyWheelSpinBankrupt 在 0.0028898 秒内完成
+   正在运行 testGamesPackA/testScoreLuckyWheelSpinLoseTurn
+.   testGamesPackA/testScoreLuckyWheelSpinLoseTurn 在 0.0022371 秒内完成
+   正在运行 testGamesPackA/testSpinLuckyWheelError
+
+================================================================================
+testGamesPackA/testSpinLuckyWheelError 中验证失败。
+    --------
+    框架诊断:
+    --------
+    verifyError 失败。
+    --> 函数未引发任何异常。
+        
+        预期的异常:
+            'Arcade:InvalidArgument'
+    
+    计算的函数:
+      包含以下值的 function_handle:
+    
+        @()spinLuckyWheel({})
+    --------
+    堆栈信息:
+    --------
+    位置: E:\javacode\game-automation-repo\matlab-arcade-simulation-lab\tests\testGamesPackA.m (testSpinLuckyWheelError)，位置: 289
+================================================================================
+.   testGamesPackA/testSpinLuckyWheelError 在 0.14145 秒内完成
+   正在运行 testGamesPackA/testSummarizeLuckyWheel
+.   testGamesPackA/testSummarizeLuckyWheel 在 0.0060995 秒内完成
+   正在运行 testGamesPackA/testPlayLuckyWheelDefault
+
+================================================================================
+testGamesPackA/testPlayLuckyWheelDefault 中出现错误并且未运行完毕。
+    --------
+    错误 ID:
+    --------
+    'MATLAB:TooManyInputs'
+    -----------
+    错误详细信息:
+    -----------
+    错误使用 spinLuckyWheel
+    输入参数太多。
+    
+    出错 playLuckyWheel (第 76 行)
+            round_data(p) = spinLuckyWheel(players{p}, 6);
+    
+    出错 testGamesPackA>testPlayLuckyWheelDefault (第 311 行)
+    summary = playLuckyWheel();
+================================================================================
+.   testGamesPackA/testPlayLuckyWheelDefault 在 0.0021306 秒内完成
+   正在运行 testGamesPackA/testPlayLuckyWheelCustom
+
+================================================================================
+testGamesPackA/testPlayLuckyWheelCustom 中出现错误并且未运行完毕。
+    --------
+    错误 ID:
+    --------
+    'MATLAB:TooManyInputs'
+    -----------
+    错误详细信息:
+    -----------
+    错误使用 spinLuckyWheel
+    输入参数太多。
+    
+    出错 playLuckyWheel (第 76 行)
+            round_data(p) = spinLuckyWheel(players{p}, 6);
+    
+    出错 testGamesPackA>testPlayLuckyWheelCustom (第 318 行)
+    summary = playLuckyWheel(3, 5);
+================================================================================
+.   testGamesPackA/testPlayLuckyWheelCustom 在 0.001575 秒内完成
+  正在拆解 testGamesPackA
+  拆解 testGamesPackA 在 0.0001608 秒内完成
+
+已完成 testGamesPackA
+__________
+
+ testGamesPackA 在 1.6257 秒内完成
+__________
+
+失败摘要:
+
+     Name                                                  Failed  Incomplete  原因
+    =====================================================================================
+     testGamesPackA/testBuildCoinFlipError                   X                 验证失败。
+    -------------------------------------------------------------------------------------
+     testGamesPackA/testSummarizeCoinFlipBasic               X         X       出错。
+    -------------------------------------------------------------------------------------
+     testGamesPackA/testSummarizeCoinFlipDeterministic       X         X       出错。
+    -------------------------------------------------------------------------------------
+     testGamesPackA/testPlayCoinFlipDefault                  X         X       出错。
+    -------------------------------------------------------------------------------------
+     testGamesPackA/testPlayCoinFlipCustom                   X         X       出错。
+    -------------------------------------------------------------------------------------
+     testGamesPackA/testSimulateDiceDuelMatchMultipleDice    X                 验证失败。
+    -------------------------------------------------------------------------------------
+     testGamesPackA/testResolveDiceDuelRoundStructure        X                 验证失败。
+    -------------------------------------------------------------------------------------
+     testGamesPackA/testSpinLuckyWheelError                  X                 验证失败。
+    -------------------------------------------------------------------------------------
+     testGamesPackA/testPlayLuckyWheelDefault                X         X       出错。
+    -------------------------------------------------------------------------------------
+     testGamesPackA/testPlayLuckyWheelCustom                 X         X       出错。
+
+========================================
+  Test Summary: 100 passed, 10 failed, 6 incomplete
+========================================
+
+  1x110 TestResult 数组 - 属性:
+
+    Name
+    Passed
+    Failed
+    Incomplete
+    Duration
+    Details
+
+总计:
+   100 Passed, 10 Failed, 6 Incomplete.
+   2.4819 秒测试时间。
+
