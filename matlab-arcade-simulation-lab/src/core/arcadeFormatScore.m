@@ -18,7 +18,7 @@ end
 str = sprintf('%d', round(score));
 
 % Insert commas every three digits from the right
-comma_positions = length(str)-3:-3:2;
+comma_positions = length(str)-2:-3:2;
 for pos = comma_positions
     str = [str(1:pos-1) ',' str(pos:end)];
 end

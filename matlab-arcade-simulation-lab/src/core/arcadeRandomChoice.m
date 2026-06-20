@@ -9,10 +9,16 @@ function choice = arcadeRandomChoice(items)
 %
 %   See also arcadeWeightedChoice, arcadeSeed
 
-if ~iscell(items) || isempty(items)
-    error('Arcade:InvalidArgument', 'RANDOMCHOICE requires a non-empty cell array');
+if isempty(items)
+    error('Arcade:InvalidArgument', 'RANDOMCHOICE requires a non-empty array');
 end
 
-idx = randi(length(items));
-choice = items{idx};
+if ~iscell(items)
+    % Numeric array
+    idx = randi(length(items));
+    choice = items(idx);
+else
+    idx = randi(length(items));
+    choice = items{idx};
+end
 end

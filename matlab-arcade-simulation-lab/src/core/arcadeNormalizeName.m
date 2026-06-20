@@ -4,7 +4,9 @@ function normalized = arcadeNormalizeName(name)
 %   lowercase, strips leading/trailing whitespace, and removes any
 %   non-alphanumeric characters except underscores and hyphens.
 %
-%   If the resulting string is empty, returns 'invalid'.
+%   Also maps abbreviations: 'h' -> 'heads', 't' -> 'tails'
+%
+%   If the resulting string is empty or unrecognized, returns 'invalid'.
 %
 %   Examples:
 %       arcadeNormalizeName('  HeAdS  ')   -> 'heads'
@@ -27,8 +29,15 @@ normalized = lower(normalized);
 keep_mask = isstrprop(normalized, 'alphanum') | (normalized == '_') | (normalized == '-');
 normalized = normalized(keep_mask);
 
-% If empty, return 'invalid'
-if isempty(normalized)
-    normalized = 'invalid';
+% Map abbreviations
+switch normalized
+    case 'h'
+        normalized = 'heads';
+    case 't'
+        normalized = 'tails';
+    case {'heads', 'tails'}
+        % valid, keep as-is
+    otherwise
+        normalized = 'invalid';
 end
 end
