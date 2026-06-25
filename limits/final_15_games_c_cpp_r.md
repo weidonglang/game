@@ -1081,3 +1081,12 @@ Status: implemented
 Implemented in: reactor-cooling-crisis/
 Tracking issue: https://github.com/weidonglang/game/issues/5
 Summary: Added a native Windows Win32/GDI reactor control room game, directly clickable EXE, CSV telemetry, and base R reactor curve plotting.
+
+---
+
+Codex implementation note - 2026-06-25
+Game: Traffic Light Dispatch Challenge (section 14)
+Status: implemented
+Implemented in: traffic-light-dispatch/
+Tracking issue: https://github.com/weidonglang/game/issues/31
+Summary: Added a native Windows Win32/GDI traffic signal dispatch game, directly clickable EXE, CSV queue telemetry, and base R wait-time plotting.

@@ -14,6 +14,7 @@ Each game is kept in its own directory with build or run instructions and a mini
 |-- dice-duel-king/             # C dice duel game with R simulation
 |-- pixel-cell-war/             # Native Windows visual cell simulation EXE
 |-- reactor-cooling-crisis/     # Native Windows reactor control room EXE
+|-- traffic-light-dispatch/     # Native Windows traffic signal dispatch EXE
 |-- auto-git-push.ps1           # Windows helper script
 |-- .gitignore
 `-- README.md
@@ -29,6 +30,7 @@ Each game is kept in its own directory with build or run instructions and a mini
 | Dice Duel King | `dice-duel-king/` | C terminal UI, R simulation | Build and run `dice_duel.exe` |
 | Pixel Cell War | `pixel-cell-war/` | C, Win32 API, GDI, R analysis | Double-click `pixel_cell_war.exe` |
 | Reactor Cooling Crisis | `reactor-cooling-crisis/` | C++, Win32 API, GDI, R analysis | Double-click `reactor_cooling_crisis.exe` |
+| Traffic Light Dispatch Challenge | `traffic-light-dispatch/` | C++, Win32 API, GDI, R analysis | Double-click `traffic_light_dispatch.exe` |
 
 ## Run Games
 
@@ -162,6 +164,43 @@ Optional R analysis:
 ```powershell
 cd E:\javacode\game-automation-repo
 Rscript .\reactor-cooling-crisis\analysis\plot_reactor.R
+```
+
+### Traffic Light Dispatch Challenge
+
+Double-click this file:
+
+```text
+E:\javacode\game-automation-repo\traffic-light-dispatch\traffic_light_dispatch.exe
+```
+
+Or run it from PowerShell:
+
+```powershell
+cd E:\javacode\game-automation-repo\traffic-light-dispatch
+.\traffic_light_dispatch.exe
+```
+
+Build from source:
+
+```powershell
+cd E:\javacode\game-automation-repo\traffic-light-dispatch
+.\build.bat
+```
+
+Self-test:
+
+```powershell
+cd E:\javacode\game-automation-repo\traffic-light-dispatch
+$p = Start-Process -FilePath '.\traffic_light_dispatch.exe' -ArgumentList '--self-test' -Wait -PassThru
+$p.ExitCode
+```
+
+Optional R analysis:
+
+```powershell
+cd E:\javacode\game-automation-repo
+Rscript .\traffic-light-dispatch\analysis\plot_traffic.R
 ```
 
 ## Automation Workflow
