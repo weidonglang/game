@@ -1090,3 +1090,12 @@ Status: implemented
 Implemented in: traffic-light-dispatch/
 Tracking issue: https://github.com/weidonglang/game/issues/31
 Summary: Added a native Windows Win32/GDI traffic signal dispatch game, directly clickable EXE, CSV queue telemetry, and base R wait-time plotting.
+
+---
+
+Codex implementation note - 2026-06-25
+Game: Stock Arena (section 7)
+Status: implemented
+Implemented in: stock-arena/
+Tracking issue: https://github.com/weidonglang/game/issues/33
+Summary: Added a native Windows Win32/GDI stock trading game, directly clickable EXE, CSV portfolio telemetry, and base R portfolio/drawdown plotting.
